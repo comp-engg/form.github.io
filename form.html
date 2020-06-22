@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width" height ="device-height:auto" initial-scale="1">
+</head>
+<header>
+<h1> Student Registration Form</h1>
+</header>
+<style type="text/css">
+	h1{
+		padding: 2px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: underline;
+
+}
+.d{
+	background-color: lightgray;
+	height: 90%;
+	position: absolute;
+	text-align: center;
+	display: inline-block;
+	line-height: 2.5;
+	margin: 8px 0px;
+	padding: 14px;
+	box-sizing: content-box;
+	 width: 97%;
+	border: solid #5B6DCD 10px;
+     padding: 5px;
+    margin-top: 6px;
+   margin-bottom: 16px; 
+   font-size: 20px;
+ font-family: sans-serif;
+}
+.s{
+	width: 100%;
+  padding: 0px ;
+  margin: 8px 0;
+  display: inline-block;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px ;
+  border: none;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+	background-color: lightgray;
+}
+</style>
+<body>
+<form action="/action_page.php" method="get">
+	<div class="d">
+			<div class="s">
+			Student  Name : <input type="text" name="Name" placeholder="Student Name" required><br>
+				<!--Last Name : <input type="text" name="Last Name" placeholder="Last  Name" required> <br>-->
+				 Father's Name :  <input type="text" name=" Father Name" placeholder=" Father's  Name" required> <br>
+				  Mother's Name :  <input type="text" name=" Mother Name" placeholder=" Mother's  Name" required> <br>
+				<label for="Birthday"> Date of Birth :</label>
+				<input type="date" id="Birthday" name="Birthday" required><br>
+				Gender:
+				<input type="radio" id="Male" name="gender" value="Male" required>
+				<label for="Male"> Male</label> 
+				<input type="radio" id="Female" name="gender" value="Female" required>
+				<label for="Female"> Female</label><br>
+			  Landline No. :
+				  <input type="tel" name="Phone Number" placeholder="Phone Number" required><br>
+			  Work  Phone No. :
+				 <input type="tel" name="Phone Number" placeholder="Phone Number" required>
+				<br>
+			Email : <input type="email" placeholder="Email" required="">
+			<br>
+			Address : <input type="text" name="Address" placeholder="Address" required>
+			<br>
+			City : <input type="text" name="City" placeholder="City" required><br>
+				State : <input type="text" name="State" placeholder="State"><br>
+				Zip Code : <input type="Postal" name="Zip" placeholder="Postal Code" required>
+				<br>
+			</div>
+		<input type="submit" value="Submit">
+		</div>
+</form>
+
+</body>
+</html>
